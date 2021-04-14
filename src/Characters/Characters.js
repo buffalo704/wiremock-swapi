@@ -35,10 +35,10 @@ const Characters = () => {
 
     const handleSavePost = async () => {
         const data = {
-            name: document.querySelector('input#name').value
+            name: inputRef.current.value
         };
 
-        const url = `${baseApiUrl[env]}/characters/save`
+        const url = `${baseApiUrl['local']}/characters/save`
         const result = await fetch(url, { method: 'POST', body: JSON.stringify(data),
             headers: {
                 'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ const Characters = () => {
     }
 
     const handleSaveGet = async() => {
-        const url = `${baseApiUrl[env]}/characters/save`
+        const url = `${baseApiUrl['local']}/characters/save`
         const result = await fetch(url);
 
         const characters = await fetchCharactersApi();

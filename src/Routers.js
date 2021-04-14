@@ -7,15 +7,15 @@ import {
 } from "react-router-dom";
 import Characters from "./Characters/Characters";
 import Films from "./Films/Films";
-import Search from "./Search/Search";
+import Authentication from "./Authentication/Authentication";
 
-export default function BasicExample() {
+export default function Routers() {
     return (
         <Router>
             <div>
                 <ul>
                     <li>
-                        <Link to="/search">Search</Link>
+                        <Link to="/authentication">Authentication</Link>
                     </li>
                     <li>
                         <Link to="/films">Films</Link>
@@ -35,8 +35,8 @@ export default function BasicExample() {
           of them to render at a time
         */}
                 <Switch>
-                    <Route path="/search">
-                        <Search />
+                    <Route path="/authentication">
+                        <Authentication />
                     </Route>
                     <Route path="/films">
                         <Films />

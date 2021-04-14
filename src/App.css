@@ -67,3 +67,8 @@ a {
     border-top-right-radius: .25rem;
   }
 }
+
+.showError{
+  display: block;
+  color:red;
+}
