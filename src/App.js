@@ -1,6 +1,5 @@
 import React from 'react';
 import Routers from "./Routers";
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 

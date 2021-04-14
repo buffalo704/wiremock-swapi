@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useRef } from 'react';
-import { baseApiUrl, env } from '../config';
+import { baseApiUrl } from '../config';
 
 const Authentication = () => {
     const [reply, setReply] = useState({text: '', imgUrl: ''});
@@ -62,7 +62,7 @@ const Authentication = () => {
                     <div className="col">
                         <p>&nbsp;</p>
                         <p>{reply.text}</p>
-                        <img src={reply.imgUrl} className="img-fluid" />
+                        <img src={reply.imgUrl} className="img-fluid" alt="" />
                     </div>
                 </div>
             </Fragment>
