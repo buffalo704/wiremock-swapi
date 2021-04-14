@@ -1,10 +1,23 @@
+body {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+.btn-gap .btn{
+  margin: .25rem .125rem;
+}
+
+a {
+  color: #fdcb0d !important;
+}
 .App {
-  text-align: center;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  opacity: .1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,8 +27,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #000000;
+  max-height: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,5 +47,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.bd-example {
+  position: relative;
+  padding: 1rem;
+  margin: 1rem -.75rem 0;
+  border: solid #dee2e6;
+  border-width: 1px 0 0;
+}
+@media (min-width: 576px){
+  .bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
   }
 }

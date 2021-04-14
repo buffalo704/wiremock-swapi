@@ -1,0 +1,17 @@
+{
+  "scenarioName": "charactersList",
+  "newScenarioState": "Started",
+  "request": {
+    "method": "GET",
+    "url": "/characters/delete"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "description": "Han Solo removed from list"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

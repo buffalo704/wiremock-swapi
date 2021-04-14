@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "/characters/save",
+    "bodyPatterns" : [ {
+      "matchesJsonPath" : "$.name"
+    } ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "characters": ["Luke Skywalker",
+        "Princess Leia",
+        "Darth Vader",
+        "{{jsonPath request.body '$.name'}}"
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

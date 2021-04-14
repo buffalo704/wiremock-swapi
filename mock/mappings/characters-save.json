@@ -1,0 +1,17 @@
+{
+  "scenarioName": "charactersList",
+  "newScenarioState": "solo-added",
+  "request": {
+    "method": "GET",
+    "url": "/characters/save"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "description": "Han Solo added to list"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

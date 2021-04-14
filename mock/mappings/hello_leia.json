@@ -1,0 +1,22 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "urlPath": "/hello",
+    "queryParameters" : {
+      "name" : {
+        "equalTo" : "Leia"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "text": "Hello Princess",
+      "imgUrl": "https://i.pinimg.com/originals/14/a5/a2/14a5a22e79b705d0958ff23fcec26fab.jpg"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

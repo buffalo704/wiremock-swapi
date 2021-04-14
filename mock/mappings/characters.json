@@ -1,0 +1,19 @@
+{
+  "scenarioName": "charactersList",
+  "requiredScenarioState": "Started",
+  "request": {
+    "method": "GET",
+    "url": "/characters"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "characters": ["Luke Skywalker",
+        "Princess Leia",
+        "Darth Vader"]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

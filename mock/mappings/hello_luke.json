@@ -1,0 +1,22 @@
+{
+  "priority": 1,
+  "request": {
+    "method": "GET",
+    "urlPath": "/hello",
+    "queryParameters" : {
+      "name" : {
+        "equalTo" : "Luke"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": { 
+      "text": "Hello Luke",
+      "imgUrl": "https://customstickershop.us/wp-content/uploads/2016/01/Hello-Kitty-Luke-Skywalker.jpg"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

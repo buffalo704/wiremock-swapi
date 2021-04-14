@@ -1,0 +1,10 @@
+{
+  "priority": 10,
+  "request": {
+    "method": "ANY",
+    "urlPattern": "/api/.*"
+  },
+  "response": {
+    "proxyBaseUrl" : "https://swapi.dev"
+  }
+}
