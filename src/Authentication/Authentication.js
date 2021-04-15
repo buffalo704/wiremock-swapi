@@ -86,7 +86,7 @@ const Authentication = () => {
                 {renderError()}
             </div>
             <div className="col-12">
-                <button type="button" onClick={handleSubmitPost} className="btn btn-light">Submit</button>
+                <button type="button" onClick={handleSubmit} className="btn btn-light">Submit</button>
             </div>
         </form>
             {renderReply()}
