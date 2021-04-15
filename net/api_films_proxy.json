@@ -2,7 +2,7 @@
   "priority": 10,
   "request": {
     "method": "ANY",
-    "urlPattern": "/api/.*"
+    "urlPattern": "/api/films/.*"
   },
   "response": {
     "proxyBaseUrl" : "https://swapi.dev"

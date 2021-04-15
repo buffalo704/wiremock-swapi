@@ -18,16 +18,12 @@ const Films = () => {
         return Promise.all(requests)
     }
 
-    const renderFilmTitles = () => {
-        if (!films){
-            return;
-        }
-
-        return films.map((film, i) => {
+    const renderFilmTitles = () => {    
+        return films && films.map((film, i) => {
             if (!film || film.detail){
-                return;
+                return null;
             }
-            console.log(film);
+            
             return (
                 <li className="list-group-item" key={i}>Episode {film.episode_id} - {film.title}</li>
             )

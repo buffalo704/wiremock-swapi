@@ -1,5 +1,5 @@
-import React, {Fragment, useState, useEffect, useRef} from 'react';
-import { baseApiUrl, env } from '../config';
+import React, { useState, useEffect, useRef} from 'react';
+import { baseApiUrl } from '../config';
 import { fetchApi } from '../common';
 
 const Characters = () => {
@@ -13,7 +13,7 @@ const Characters = () => {
 
     const fetchCharactersApi = async () => {
         try {
-            const url = `${baseApiUrl.local}/characters`;
+            const url = `${baseApiUrl['local']}/characters`;
             const result = await fetchApi(url);
             return result.characters;
         } catch (e) {
@@ -49,14 +49,14 @@ const Characters = () => {
 
     const handleSaveGet = async() => {
         const url = `${baseApiUrl['local']}/characters/save`
-        const result = await fetch(url);
+        await fetch(url);
 
         const characters = await fetchCharactersApi();
         setCharactersList(characters);
     }
 
     const handleDelete = async() => {
-        const url = `${baseApiUrl[env]}/characters/delete`
+        const url = `${baseApiUrl['local']}/characters/delete`
         await fetch(url);
 
         const characters = await fetchCharactersApi();
