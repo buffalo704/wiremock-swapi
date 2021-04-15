@@ -11,7 +11,7 @@
     "status": 200,
     "jsonBody": {
       "text": "Hello Vader",
-      "imgUrl": "https://i.ebayimg.com/images/g/ZN8AAOSwBahVboYY/s-l1600.jpg"
+      "imgUrl": "http://localhost:8080/s-l1600.jpg"
     },
     "headers": {
       "Content-Type": "application/json"
