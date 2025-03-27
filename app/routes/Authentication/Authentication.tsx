@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useRef } from 'react';
-import { baseApiUrl } from '../config';
+import { baseApiUrl } from '~/config';
 
-const Authentication = () => {
+export default function Authentication(){
     const [reply, setReply] = useState({text: '', imgUrl: ''});
     const [isError, setIsError] = useState(false);
 
@@ -37,7 +37,7 @@ const Authentication = () => {
         fetchGreeting(data);
     };
 
-    const fetchGreeting = async (data) => {
+    const fetchGreeting = async (data:any) => {
         const url = new URL(`${baseApiUrl['local']}/hello`);
         url.search = new URLSearchParams(data).toString();
 
@@ -95,5 +95,3 @@ const Authentication = () => {
     </div>);
 
 }
-
-export default Authentication;

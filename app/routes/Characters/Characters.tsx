@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef} from 'react';
-import { baseApiUrl } from '../config';
-import { fetchApi } from '../common';
+import { baseApiUrl } from '../../config';
+import { fetchApi } from '../../common';
 
-const Characters = () => {
+export default function Characters() {
     const [charactersList, setCharactersList] = useState();
     const inputRef = useRef(null);
 
@@ -91,5 +91,3 @@ const Characters = () => {
         </div>
     )
 }
-
-export default Characters;
